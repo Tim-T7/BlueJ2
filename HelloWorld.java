@@ -25,5 +25,11 @@ public class HelloWorld
         for (int iterate = 0; iterate < array.length; iterate++){
         System.out.println(array[iterate]);
     }
+    for (String value : array) {
+        System.out.print(value);
+    }
+    for (int iterate = 0; iterate < array.length; iterate --){
+        System.out.println(array[iterate]);
+    }
 }
 }
