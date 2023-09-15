@@ -23,13 +23,16 @@ public class HelloWorld
         System.out.println(str3);
         String[] array = {"Alpha","Bravo","Charlie","Delta","Echo"};
         for (int iterate = 0; iterate < array.length; iterate++){
-        System.out.println(array[iterate]);
+            System.out.println(array[iterate]);
+        }
+        for (String value : array) {
+            System.out.print(value);
+        }
+        for (int iterate = 0; iterate < array.length; iterate++){
+            System.out.print(array[iterate]);
+            if (iterate != array.length-1) { //if at last variable, dont print -
+                System.out.print("-");
+            }
+        }
     }
-    for (String value : array) {
-        System.out.print(value);
-    }
-    for (int iterate = 0; iterate < array.length; iterate --){
-        System.out.println(array[iterate]);
-    }
-}
 }
